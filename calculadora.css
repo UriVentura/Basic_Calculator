@@ -1,0 +1,65 @@
+body {
+	font-family: Arial;
+}
+
+.calculadora {
+	display: block;
+	width: 30%;
+	border: 1px solid black;
+	border-radius: 4%;
+	padding: 1%;
+}
+
+table {
+	text-align: center;
+	font-size: 20px;
+}
+
+.botonNumero {
+	background-color: red;
+	border: 1px solid black;
+	border-radius: 10%;
+	width: 70px;
+	height: 40px;
+	font-size: 18px;
+}
+
+.botonNumero:hover {
+	border-color: black;
+}
+
+.botonResultado {
+	background-color: blue;
+	border: 1px solid black;
+	color: white;
+	border-radius: 10%;
+	width: 70px;
+	height: 40px;
+	font-size: 18px;
+}
+
+.botonResultado:hover {
+	border-color: grey;
+}
+
+.botonOperacion {
+	background-color: grey;
+	border: 1px solid black;
+	border-radius: 10%;
+	width: 70px;
+	height: 40px;
+	font-size: 18px;
+}
+
+.botonOperacion:hover {
+	border-color: black;
+}
+
+.operacion {
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 2%;
+	text-align: right;
+	height: 60px;
+	font-size: 50px;
+}

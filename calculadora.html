@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="calculadora.css">
+	<script type="text/javascript" src="calculadora.js"></script>
+</head>
+<body>
+
+<div class="calculadora">
+	<table width="100%">
+		<tr>
+			<td colspan="4" class="operacion"><div id="resultado"></div></td>
+		</tr>
+
+		<tr>
+			<td><input type="button" value="CE" onclick="borrarLinea()" class="botonOperacion"></td>
+			<td><input type="button" value="C" onclick="reset()" class="botonOperacion"></td>
+			<td colspan="2"><input type="button" value="◄" style="border-radius: 5%; width: 85%" onclick="borrarNumero()" class="botonOperacion"></td>
+		</tr>
+
+		<tr>
+			<td><input type="button" id="boton7" value="7" class="botonNumero"></td>
+			<td><input type="button" id="boton8" value="8" class="botonNumero"></td>
+			<td><input type="button" id="boton9" value="9" class="botonNumero"></td>
+			<td><input type="button" id="boton/" value="/" onclick="control('dividir')" class="botonOperacion"></td>
+		</tr>
+
+		<tr>
+			<td><input type="button" id="boton4" value="4" class="botonNumero"></td>
+			<td><input type="button" id="boton5" value="5" class="botonNumero"></td>
+			<td><input type="button" id="boton6" value="6" class="botonNumero"></td>
+			<td><input type="button" id="boton*" value="*" onclick="control('multiplicar')" class="botonOperacion"></td>
+		</tr>
+
+		<tr>
+			<td><input type="button" id="boton1" value="1" class="botonNumero"></td>
+			<td><input type="button" id="boton2" value="2" class="botonNumero"></td>
+			<td><input type="button" id="boton3" value="3" class="botonNumero"></td>
+			<td><input type="button" id="boton-" value="-" onclick="control('restar')" class="botonOperacion"></td>
+		</tr>
+
+		<tr>
+			<td><input type="button" id="boton0" value="0" class="botonNumero"></td>
+			<td><input type="button" id="boton." value="." class="botonNumero" onclick="punto()"></td>
+			<td><input type="button" class="botonResultado" onclick="control('resultado')" value="="></td>
+			<td><input type="button" id="boton+" value="+"  onclick="control('sumar')" class="botonOperacion"></td>
+		</tr>
+	</table>
+</div>
+
+</body>
+</html>
